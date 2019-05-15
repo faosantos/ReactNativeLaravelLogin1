@@ -26,10 +26,10 @@ class LoginScreen extends Component {
         else {
             return (
                 <View style={styles.container}>
-                    <Text>Usuário {auth.name}</Text>
+                    <Text>{auth.email}</Text>
                     <Button title="Mais informações" color= "#236CF5" onPress={()=>onUser(auth)}/>
                     <Text style={{fontWeight:'bold'}}>{auth.name}</Text>
-                    <Text style={{fontWeight:'bold'}}>{auth.email}</Text>
+                    {/* <Text style={{fontWeight:'bold'}}>{auth.email}</Text> */}
                     <Button title="Sair" color= "#236CF5" onPress={()=>onLogout()}/>
                 </View>
                 )
